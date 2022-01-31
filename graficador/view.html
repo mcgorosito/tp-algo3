@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="utf-8" http-equiv="encoding">
+    <style>
+      html, body {
+        background-color: #f8f8f8;
+      }
+    </style>
+  </head>
+  <body>
+
+    <p>Paste input for graphs G and H and the corresponding coloring</p>
+
+    <form id="graphInput">
+      Graph G and H: <input id="graphs" type="text" name="graphs"><br>
+      Coloring: <input id="coloring" type="text" name="coloring"><br><br>
+      <input type="button" onclick="generateGraphs()" value="Submit">
+    </form>
+    <h1>Colored graphs</h1>
+    <style type="text/css">
+        .divLeft {
+            width:400px;
+            display:block;
+            float: left;
+        }
+        .divRight {
+            width:400px;
+            display:block;
+            float: right;
+        }
+    </style>
+    <span id="containerG"></span>
+    <span id="containerH"></span>
+    <script src="elgrapho.min.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
